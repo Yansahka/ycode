@@ -334,3 +334,105 @@ main{
     font-size: 0.9rem;
     letter-spacing: 1px;
 }
+
+
+/* --- Styles Spécifiques Page Contact --- */
+
+.contact-main {
+    min-height: calc(100vh - 8rem);
+    display: flex;
+    align-items: center;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.contact-form-side {
+    z-index: 10;
+}
+
+.contact-form-side .tag-box{
+    margin-bottom: 5px;
+}
+
+.contact-form-side h1{
+    font-size: 2.5rem;
+}
+.main-form {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: #7f42a7;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(127, 66, 167, 0.2);
+}
+
+.contact-visual-side {
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-3d-model {
+    width: 100%;
+    height: 100%;
+}
+
+/* --- Responsive Contact --- */
+
+@media (max-width: 1024px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding-top: 2rem;
+    }
+    
+    .contact-visual-side {
+        height: 400px;
+        order: -1; /* Met la 3D au dessus sur mobile */
+    }
+
+    .contact-form-side {
+        text-align: center;
+    }
+
+    .main-form {
+        align-items: center;
+    }
+
+    .tag-box {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-3d-model {
+        transform: scale(0.8);
+    }
+}

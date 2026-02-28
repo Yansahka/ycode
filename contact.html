@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Contact | YCODE Futur Web</title>
+</head>
+<body>
+    <img class="image-gradient" src="gradient.png" alt="gradient">
+    <div class="layer-blur"></div>
+
+    <div class="container">
+        <header>
+            <h1 data-aos="fade-down" class="logo">YCODE</h1>
+            <nav>
+                <a href="index.html">SERVICES</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="#">NOTRE VISION</a>
+                <a href="#">LABS</a>
+            </nav>
+            <button class="btn-signing">RETOUR</button>
+        </header>
+
+        <main class="contact-main">
+            <div class="contact-container">
+                <!-- Formulaire de contact -->
+                <div class="contact-form-side" data-aos="fade-right" data-aos-duration="1500">
+                    <!-- <div class="tag-box">
+                        <div class="tag">DISCUTONS DE VOTRE PROJET &wedbar;</div>
+                    </div> -->
+                    <h1>CONTACTEZ-NOUS</h1>
+                    <p class="description">Prêt à donner vie à votre vision en 3D ? Envoyez-nous un message.</p>
+                    <form class="main-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="Nom complet" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email professionnel" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea placeholder="Votre message..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-signing-main">Envoyer ></button>
+                    </form>
+                </div>
+
+                <!-- Emplacement Spline -->
+                <div class="contact-visual-side" data-aos="fade-left" data-aos-duration="1500">
+                    <spline-viewer class="contact-3d-model" url="https://prod.spline.design/J8WJGREX0jSxTuo7/scene.splinecode"></spline-viewer>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.61/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
