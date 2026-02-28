@@ -1,0 +1,63 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com" />
+    <title>Portfolio | YCODE 3D</title>
+</head>
+<body>
+    <img class="image-gradient" src="gradient.png" alt="gradient">
+    <div class="layer-blur"></div>
+
+    <div class="container">
+        <header>
+            <h1 class="logo">YCODE</h1>
+            <nav>
+                <a href="index.html">ACCUEIL</a>
+                <a href="#" class="active">PROJETS</a>
+                <a href="#">SERVICES</a>
+            </nav>
+            <button class="btn-signing">CONTACT</button>
+        </header>
+
+        <main class="portfolio-main">
+            <div class="content" data-aos="fade-up">
+                <div class="tag-box">
+                    <div class="tag">TRAVAUX RÉCENTS &wedbar;</div>
+                </div>
+                <h1>NOS <br>RÉALISATIONS</h1>
+            </div>
+
+            <!-- Grille de Projets -->
+            <section class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-preview">
+                         <!-- Ici on peut mettre une image ou un mini spline-viewer -->
+                         <img src="https://via.placeholder.com" alt="Projet 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Cyber Interface</h3>
+                        <p>UI Design & Intégration Spline</p>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-preview">
+                        <img src="https://via.placeholder.com" alt="Projet 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Abstract Motion</h3>
+                        <p>Landing page futuriste</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

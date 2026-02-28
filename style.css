@@ -68,6 +68,7 @@ nav a {
     transition: color 0.2s ease;
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 nav a:hover {
@@ -196,6 +197,7 @@ main{
     position: absolute;
     top: 0;
     right: -20%;
+    z-index: -10;
 }
 
 /* TABLET RESPONSIVE */
@@ -268,4 +270,67 @@ main{
     }
 
 
+}
+
+/* Styles spécifiques au Portfolio */
+.portfolio-main {
+    justify-content: flex-start;
+    padding-top: 5rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    padding: 4rem 10%;
+    z-index: 10;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #7f42a7;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.project-preview {
+    width: 100%;
+    height: 250px;
+    background: #0a0a0a;
+}
+
+.project-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-preview img {
+    opacity: 1;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.project-info p {
+    color: gray;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
